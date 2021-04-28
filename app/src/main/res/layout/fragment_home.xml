@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/atitlegothic3"
+        android:text="여건 개선해조"
+        android:textColor="@color/backgroundGray"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="382dp"
+        android:layout_height="270dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="382dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <ImageView
+        android:id="@+id/btnModify"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/pencil"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/atitlegothic2"
+        android:text="나의 정보"
+        android:textColor="@color/purple_700"
+        android:textSize="17dp"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/atitlegothic2"
+        android:text="박슈니(여)님"
+        android:textColor="@color/textColor"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textBirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/atitlegothic2"
+        android:text="생년월일: 0000.00.00"
+        android:textColor="@color/textColor"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/textName" />
+
+
+    <TextView
+        android:id="@+id/textMyHos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/atitlegothic2"
+        android:text="나의 병원: 바롬 대학 병원"
+        android:textColor="@color/textColor"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/textBirth" />
+
+    <TextView
+        android:id="@+id/textMyVac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/atitlegothic2"
+        android:text="나의 접종 기록: "
+        android:textColor="@color/textColor"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/textMyHos" />
+
+    <ImageView
+        android:id="@+id/imgChk1"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/check_ck"
+        app:layout_constraintStart_toEndOf="@+id/textMyVac"
+        app:layout_constraintTop_toBottomOf="@+id/textMyHos" />
+
+    <ImageView
+        android:id="@+id/imgChk2"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/check_ck"
+        app:layout_constraintStart_toEndOf="@+id/imgChk1"
+        app:layout_constraintTop_toBottomOf="@+id/textMyHos" />
+
+    <ImageView
+        android:id="@+id/imgChk3"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/check_unck"
+        app:layout_constraintStart_toEndOf="@+id/imgChk2"
+        app:layout_constraintTop_toBottomOf="@+id/textMyHos" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="382dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="22dp"
+        android:fontFamily="@font/atitlegothic3"
+        android:text="다음 접종까지"
+        android:textColor="@color/purple_700"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@+id/view4"
+        app:layout_constraintTop_toTopOf="@+id/view4" />
+
+    <TextView
+        android:id="@+id/textVecDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/atitlegothic3"
+        android:text="326"
+        android:textColor="@color/purple_700"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="@+id/view4" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:fontFamily="@font/atitlegothic3"
+        android:text="일 남았습니다"
+        android:textColor="@color/purple_700"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintTop_toTopOf="@+id/view4" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
